@@ -1,5 +1,7 @@
-import {AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaUserAlt } from 'react-icons/fa'
+import { FiFacebook } from 'react-icons/fi'
+
 
 const Main = () => {
     return (
@@ -20,18 +22,28 @@ const Main = () => {
                     </p>
                     <div className='flex items center justify-between max-w-[350px] m-auto py-4'>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
-                            <FaLinkedinIn size={25} />
+
+                            <a target={'_blank'} rel='noreferrer' href="https://www.linkedin.com/in/mehedy-hasan-linkon/"> <FaLinkedinIn size={25} /></a>
+
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
-                            <AiFillGithub size={25} />
+                            <a target={'_blank'} rel='noreferrer' href="https://github.com/Mehedyh259"><AiFillGithub size={25} /></a>
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
                             <AiOutlineMail size={25} />
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
-                            <FaUserAlt size={25} />
+                            <a target={'_blank'} rel='noreferrer' href="https://web.facebook.com/mehedy.hasan.linkon999/"><FiFacebook size={25} /></a>
                         </div>
 
+                    </div>
+                    <div className="flex justify-center py-2">
+
+                        <a target={'_blank'} rel='noreferrer' href='https://drive.google.com/file/d/1QrEUzdgvN056ptryjf9TJs92pgS2NVhq/view?usp=sharing' >
+                            <button className="rounded-full shadow-lg p-4 cursore-pointer bg-primary">
+                                Download Resume
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -41,3 +53,4 @@ const Main = () => {
 };
 
 export default Main;
+

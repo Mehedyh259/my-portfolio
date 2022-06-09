@@ -68,7 +68,7 @@ const Navbar = () => {
                 }>
                     <div>
                         <div className="flex w-full items-center justify-between">
-                            <Image src={'/../public/assets/navLogo.png'} alt="..." width={'125'} height={'50'} />
+                            <Image src={logo} alt="..." width={'125'} height={'50'} />
                             <div onClick={handleNavFunction} className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer">
                                 <AiOutlineClose size={25} />
                             </div>
@@ -81,19 +81,19 @@ const Navbar = () => {
                     <div className="py-4 flex flex-col">
                         <ul className="uppercase">
                             <Link href={'/#home'}>
-                                <li className="py-3 font-bold text-sm">Home</li>
+                                <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">Home</li>
                             </Link>
                             <Link href={'/#about'}>
-                                <li className="py-3 font-bold text-sm">About</li>
+                                <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">About</li>
                             </Link>
                             <Link href={'/#skills'}>
-                                <li className="py-3 font-bold text-sm">Skills</li>
+                                <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">Skills</li>
                             </Link>
                             <Link href={'/#projects'}>
-                                <li className="py-3 font-bold text-sm">Project</li>
+                                <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">Project</li>
                             </Link>
                             <Link href={'/#contact'}>
-                                <li className="py-3 font-bold text-sm">Contact</li>
+                                <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">Contact</li>
                             </Link>
                         </ul>
                         <div className="pt-20">

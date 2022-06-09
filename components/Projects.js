@@ -18,21 +18,21 @@ const Projects = () => {
                         using="React JS"
                         backgroundImg={manufacturerImg}
                         projectUrl='https://manufacturer-web-a4c58.web.app/'
-                        githubUrl="https://github.com/Mehedyh259/manufacturere-web-front-end"
+                        detailsUrl="/projects/manufacturer"
                     />
                     <ProjectItem
                         title='Warehouse App'
                         using="React JS"
                         backgroundImg={wareHouseImg}
                         projectUrl='https://medicine-inventory-76ade.web.app/'
-                        githubUrl="https://github.com/Mehedyh259/warehouse-management"
+                        detailsUrl="/projects/warehouse"
                     />
                     <ProjectItem
                         title='Doctors Portal'
                         using="React JS"
                         backgroundImg={doctorsPortal}
                         projectUrl='https://doctors-portal-743a3.web.app/'
-                        githubUrl="https://github.com/Mehedyh259/doctors-portal-frontend"
+                        detailsUrl="/projects/doctorsportal"
                     />
 
                 </div>

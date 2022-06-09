@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
-const ProjectItem = ({ title, using, backgroundImg, projectUrl, githubUrl }) => {
+const ProjectItem = ({ title, using, backgroundImg, projectUrl, detailsUrl }) => {
     return (
         <div className='relative flex items-center justify-center h-auto w-full max-h-md shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
             <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' />
@@ -10,9 +11,9 @@ const ProjectItem = ({ title, using, backgroundImg, projectUrl, githubUrl }) => 
                 <a target={'_blank'} rel="noreferrer" href={projectUrl}>
                     <p className='text-center py-3 mb-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>Live Site</p>
                 </a>
-                <a target={'_blank'} rel="noreferrer" href={githubUrl}>
-                    <p className='text-center py-3 mb-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>Github Code</p>
-                </a>
+                <Link href={detailsUrl}>
+                    <p className='text-center py-3 mb-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>Details</p>
+                </Link>
             </div>
         </div>
     )
