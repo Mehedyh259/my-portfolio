@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className='uppercase pt-8'>Connect With Me</p>
-                <div className='flex items center justify-between max-w-[350px] py-4'>
+                <div className='flex items center justify-between max-w-[250px] py-4'>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 
                     <a target={'_blank'} rel='noreferrer' href="https://www.linkedin.com/in/mehedy-hasan-linkon/"> <FaLinkedinIn size={25} /></a>
@@ -61,9 +61,6 @@ const Contact = () => {
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
                     <a target={'_blank'} rel='noreferrer' href="https://github.com/Mehedyh259"><AiFillGithub size={25} /></a>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
-                    <AiOutlineMail size={25} />
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
                     <a target={'_blank'} rel='noreferrer' href="https://web.facebook.com/mehedy.hasan.linkon999/"><FiFacebook size={25} /></a>

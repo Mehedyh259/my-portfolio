@@ -2,6 +2,7 @@ import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaUserAlt } from 'react-icons/fa'
 import { FiFacebook } from 'react-icons/fi'
 import { BsCloudDownload } from 'react-icons/bs'
+import Link from 'next/link'
 
 
 const Main = () => {
@@ -31,7 +32,7 @@ const Main = () => {
                             <a target={'_blank'} rel='noreferrer' href="https://github.com/Mehedyh259"><AiFillGithub size={25} /></a>
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
-                            <AiOutlineMail size={25} />
+                            <Link href='/#contact'><AiOutlineMail size={25} /></Link>
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
                             <a target={'_blank'} rel='noreferrer' href="https://web.facebook.com/mehedy.hasan.linkon999/"><FiFacebook size={25} /></a>
