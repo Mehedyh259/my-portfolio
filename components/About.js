@@ -6,7 +6,7 @@ import profile2 from '../public/assets/profileImage.png';
 const About = () => {
     return (
         <div id='about' className='w-full bg-white py-16 flex items-center px-3 lg:px-0'>
-            <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center'>
+            <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-16 items-center'>
 
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
@@ -14,7 +14,7 @@ const About = () => {
                     </p>
                     <h2 className='py-4'>Who I Am</h2>
 
-                    <p className='py-2 text-gray-600'>
+                    <p className='py-2 text-gray-600 text-justify'>
                         Recently completed my graduation in Compute Science and Engineering. In 2019 I started working
                         with HTML & CSS to make some minor edits on a small website
                         that I was operating. What I thought was just a few small edits
@@ -30,7 +30,7 @@ const About = () => {
 
                 </div>
 
-                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+                <div className='w-full h-auto m-auto shadow-xl my-3 md:my-0 shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
                     <Image
                         className='rounded-xl'
                         src={profile}

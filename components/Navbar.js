@@ -2,7 +2,8 @@ import Image from "next/image";
 import { useState, useEffect } from 'react';
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
-import { FaLinkedinIn, FaUserAlt } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FiFacebook } from 'react-icons/fi';
 import logo from '../public/assets/navLogo.png';
 
 
@@ -34,11 +35,11 @@ const Navbar = () => {
         }>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 
-                <Image src={logo} alt="..." width={'125'} height={'50'} />
+                <Link href={'/'}><Image className="cursor-pointer" src={logo} alt="..." width={'125'} height={'50'} /></Link>
 
                 <div>
                     <ul className="hidden md:flex">
-                        <Link href={'/#home'}>
+                        <Link href={'/'}>
                             <li className="font-bold ml-10 text-sm uppercase  border-blue-500">Home</li>
                         </Link>
                         <Link href={'/#about'}>
@@ -99,17 +100,15 @@ const Navbar = () => {
                         <div className="pt-20">
                             <p className="uppercase tracking-widest text-[#5651e5]">Let&apos;s Connect</p>
                             <div className="flex items-center justify-between w-full sm:w-[60%] mt-3">
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <FaLinkedinIn />
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                                    <a target={'_blank'} rel='noreferrer' href="https://www.linkedin.com/in/mehedy-hasan-linkon/"> <FaLinkedinIn size={25} /></a>
                                 </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <AiFillGithub />
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                                    <a target={'_blank'} rel='noreferrer' href="https://github.com/Mehedyh259"><AiFillGithub size={25} /></a>
                                 </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <AiOutlineMail />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <FaUserAlt />
+
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                                    <a target={'_blank'} rel='noreferrer' href="https://web.facebook.com/mehedy.hasan.linkon999/"><FiFacebook size={25} /></a>
                                 </div>
                             </div>
                         </div>

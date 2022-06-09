@@ -23,10 +23,9 @@ const Main = () => {
                         I am a MERN stack web developer specializing in building web projects. Currently I&apos;m focused on building responsive front-end and well maintained back-end technologies.
                     </p>
                     <div className='flex items center justify-between max-w-[350px] m-auto py-4'>
+
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
-
                             <a target={'_blank'} rel='noreferrer' href="https://www.linkedin.com/in/mehedy-hasan-linkon/"> <FaLinkedinIn size={25} /></a>
-
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
                             <a target={'_blank'} rel='noreferrer' href="https://github.com/Mehedyh259"><AiFillGithub size={25} /></a>
