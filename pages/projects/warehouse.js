@@ -1,9 +1,9 @@
-import manufacturerImg from '../../public/assets/projects/manufacturar.png'
+import wareHouseImg from '../../public/assets/projects/warehouse.png'
 import Image from 'next/image'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
-const ManufacturerProjectDetails = () => {
+const WarehouseProjectDetails = () => {
     return (
         <div className='w-full'>
             <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -12,12 +12,12 @@ const ManufacturerProjectDetails = () => {
                     className='absolute z-1'
                     layout='fill'
                     objectFit='cover'
-                    src={manufacturerImg}
+                    src={wareHouseImg}
                     alt='/'
                 />
                 <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-                    <h2 className='py-2'>Manufacturer Website</h2>
-                    <h3>React JS / Tailwind / Firebase / Mongodb / NodeJS</h3>
+                    <h2 className='py-2'>Warehouse Mangement</h2>
+                    <h3>React JS / React-Bootstrap / Firebase / Mongodb / NodeJS</h3>
                 </div>
             </div>
 
@@ -27,17 +27,17 @@ const ManufacturerProjectDetails = () => {
                     <h2>Overview</h2>
                     <p>
                         This app was built using React JS and is hosted on Firebase. Users
-                        are able to order products from this website based on their demands and quantity. User
+                        are able to manage their products quantity from this website. User
                         authentication is available so you can signup & signin to your
-                        account with an email address and google login system.Users can pay their order cost via cards.
+                        account with an email address and google login system.Also pagination added to the items page page for fast rendaring.
                     </p>
-                    <a target={'_blank'} rel='noreferrer' href='https://manufacturer-web-a4c58.web.app/' >
+                    <a target={'_blank'} rel='noreferrer' href='https://medicine-inventory-76ade.web.app/' >
                         <button className='px-8 py-2 mt-4 mx-2'>Live Demo</button>
                     </a>
-                    <a target={'_blank'} rel='noreferrer' href='https://github.com/Mehedyh259/manufacturere-web-front-end' >
+                    <a target={'_blank'} rel='noreferrer' href='https://github.com/Mehedyh259/warehouse-management' >
                         <button className='px-8 py-2 mt-4 mx-2'>Front-End Code</button>
                     </a>
-                    <a target={'_blank'} rel='noreferrer' href='https://github.com/Mehedyh259/manufacturar-web-back-end' >
+                    <a target={'_blank'} rel='noreferrer' href='https://github.com/Mehedyh259/warehouse-server' >
                         <button className='px-8 py-2 mt-4 mx-2'>Back-End Code</button>
                     </a>
                 </div>
@@ -49,7 +49,7 @@ const ManufacturerProjectDetails = () => {
                                 <RiRadioButtonFill className='pr-1' /> React
                             </p>
                             <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1' /> Tailwind
+                                <RiRadioButtonFill className='pr-1' /> React Bootstrp
                             </p>
                             <p className='text-gray-600 py-2 flex items-center'>
                                 <RiRadioButtonFill className='pr-1' /> Javascript
@@ -63,9 +63,7 @@ const ManufacturerProjectDetails = () => {
                             <p className='text-gray-600 py-2 flex items-center'>
                                 <RiRadioButtonFill className='pr-1' /> Node JS
                             </p>
-                            <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1' /> Stripe
-                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -78,4 +76,4 @@ const ManufacturerProjectDetails = () => {
 };
 
 
-export default ManufacturerProjectDetails;
+export default WarehouseProjectDetails;
