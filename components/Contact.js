@@ -1,24 +1,27 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaUserAlt } from 'react-icons/fa'
 import { FiFacebook } from 'react-icons/fi'
-
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import emailJs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const form = useRef();
 
-  const handleSubmit = () => {
-    setName('');
-    setPhone('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailJs.sendForm("service_kvphf27", "template_5cnihm3", form.current, "3T-0y-eW2odvD04gZ")
+      .then((result) => {
+        if (result.status === 200)
+          toast.success("Message sent successfully. I will cantact you soon..!");
+        e.target.reset();
+      }), (error) => {
+        toast.error("Some Error happend..!")
+      }
+
   };
 
   return (
@@ -74,6 +77,7 @@ const Contact = () => {
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
+                ref={form}
                 onSubmit={handleSubmit}
                 action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
                 method='POST'
@@ -84,8 +88,8 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='text'
                     name='name'
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    placeholder='Enter your name'
+                    required
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -94,8 +98,8 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='email'
                     name='email'
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder='Enter you email'
+                    required
                   />
                 </div>
 
@@ -105,8 +109,8 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 border-gray-300'
                     rows='10'
                     name='message'
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder='Message...'
+                    required
                   ></textarea>
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>
@@ -124,6 +128,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
