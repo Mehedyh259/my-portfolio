@@ -1,6 +1,7 @@
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaUserAlt } from 'react-icons/fa'
 import { FiFacebook } from 'react-icons/fi'
+import { BsCloudDownload } from 'react-icons/bs'
 
 
 const Main = () => {
@@ -37,11 +38,11 @@ const Main = () => {
                         </div>
 
                     </div>
-                    <div className="flex justify-center py-2">
+                    <div className="flex justify-center py-2 mt-[25px]">
 
                         <a target={'_blank'} rel='noreferrer' href='https://drive.google.com/file/d/1QrEUzdgvN056ptryjf9TJs92pgS2NVhq/view?usp=sharing' >
-                            <button className="rounded-full shadow-lg p-4 cursore-pointer bg-primary">
-                                Download Resume
+                            <button className="rounded-full shadow-lg p-4 cursore-pointer bg-primary flex items-center space-x-2">
+                                <BsCloudDownload size={25} className={'mr-2'} /> Download Resume
                             </button>
                         </a>
                     </div>

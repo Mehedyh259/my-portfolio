@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React, { useState, useRef } from 'react';
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaUserAlt } from 'react-icons/fa'
+import { BiPaperPlane } from 'react-icons/bi'
 import { FiFacebook } from 'react-icons/fi'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import emailJs from 'emailjs-com';
@@ -25,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div id='contact' className='w-full'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact
@@ -113,8 +114,8 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <button className='w-full p-4 text-gray-100 mt-4'>
-                  Send Message
+                <button className='w-full p-4 flex justify-center text-gray-100 mt-4'>
+                  <BiPaperPlane className='mr-2' size={25} /> Send Message
                 </button>
               </form>
             </div>

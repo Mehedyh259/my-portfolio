@@ -1,8 +1,11 @@
 import React from 'react';
+import Image from 'next/image'
+import profile from '../public/assets/myPhoto.jpg';
+import profile2 from '../public/assets/profileImage.png';
 
 const About = () => {
     return (
-        <div id='about' className='w-full py-16 flex items-center px-3 lg:px-0'>
+        <div id='about' className='w-full bg-white py-16 flex items-center px-3 lg:px-0'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center'>
 
                 <div className='col-span-2'>
@@ -10,7 +13,7 @@ const About = () => {
                         About
                     </p>
                     <h2 className='py-4'>Who I Am</h2>
-                    
+
                     <p className='py-2 text-gray-600'>
                         Recently completed my graduation in Compute Science and Engineering. In 2019 I started working
                         with HTML & CSS to make some minor edits on a small website
@@ -24,13 +27,13 @@ const About = () => {
                         now spending my time building projects with React JS, Node JS, Firebase, and
                         learning new technologies.
                     </p>
-                    
+
                 </div>
 
                 <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                    <img
+                    <Image
                         className='rounded-xl'
-                        src='https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80'
+                        src={profile}
                         alt='/'
                     />
                 </div>
