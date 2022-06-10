@@ -54,6 +54,9 @@ const Navbar = () => {
                         <Link href={'/#contact'}>
                             <li className="font-bold ml-10 text-sm uppercase ">Contact</li>
                         </Link>
+                        <Link href={'/blog'}>
+                            <li className="font-bold ml-10 text-sm uppercase ">Blog</li>
+                        </Link>
                     </ul>
                 </div>
                 <div onClick={handleNavFunction} className="md:hidden cursor-pointer">
@@ -95,6 +98,9 @@ const Navbar = () => {
                             </Link>
                             <Link href={'/#contact'}>
                                 <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">Contact</li>
+                            </Link>
+                            <Link href={'/blog'}>
+                                <li onClick={() => setNav(false)} className="py-3 font-bold text-sm">Blog</li>
                             </Link>
                         </ul>
                         <div className="pt-20">
