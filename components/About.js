@@ -8,7 +8,7 @@ const About = () => {
         <div id='about' className='w-full bg-white py-16 flex items-center px-3 lg:px-0'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-16 items-center'>
 
-                <div className='col-span-2'>
+                <div data-aos="fade-right" className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
                         About
                     </p>
@@ -30,7 +30,7 @@ const About = () => {
 
                 </div>
 
-                <div className='w-full h-auto m-auto shadow-xl my-3 md:my-0 shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+                <div data-aos="fade-left" className='w-full h-auto m-auto shadow-xl my-3 md:my-0 shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
                     <Image
                         className='rounded-xl'
                         src={profile}

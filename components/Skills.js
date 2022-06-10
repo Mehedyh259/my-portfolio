@@ -11,7 +11,7 @@ import GithubLogo from '../public/assets/skills/github.png';
 
 const Skills = () => {
     return (
-        <div id='skills' className='w-full lg:h-screen px-3 lg:px-0'>
+        <div data-aos="zoom-in-up" id='skills' className='w-full lg:h-screen px-3 lg:px-0'>
             <div className='max-w-[1240px] py-12 mx-auto flex flex-col justify-center h-full'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
                     Skills
